@@ -3,9 +3,32 @@ import style from './CreateBooks.module.css'
 import Input from "../forms/Input";
 import Select from '../forms/Select'
 import Button from "../forms/Button";
+import { useState, useEffect } from "react";
 
 const CreateBooks = () =>{
-
+/* recupera os dados de categoria api rest*/
+    useEffect(() =>{
+        fetch('http://localhost:5000/listagemCateorias', {
+            method:'GET',
+            headers:{
+                'Content-Type':'application/jason',
+                'Acess-Control-Allow-Origin':'*',
+                "Acess-Control-Allow-Headers":'*',
+            }
+        }).then(
+            (resp) =>
+                // console.log('RESPOSTA' + resp)
+                resp.json()
+        ).then(
+            (data)=> {
+                console.log('DATA' + data.data [0].nome_categoria)
+            } 
+        ).catch(
+            (error) => {
+                console.log(error)
+            }
+        )
+    },[]);
     return(
 
         <section className={style.CreateBooks_container}>
