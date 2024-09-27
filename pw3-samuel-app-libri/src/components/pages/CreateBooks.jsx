@@ -85,8 +85,7 @@ const CreateBooks = () =>{
 
         <h1>CADAIXTRO DE LIVROIX</h1>
 
-        <form submit={submit}></form>
-        
+        <form submit={submit}>
         <Input
             type='text'
             name='nome_livro'
@@ -120,7 +119,8 @@ const CreateBooks = () =>{
         <Button
             rotulo='Cadastrar Livro'
         />
-
+        </form>
+        
         </section>
     )
 }
