@@ -85,7 +85,7 @@ const CreateBooks = () =>{
 
         <h1>CADAIXTRO DE LIVROIX</h1>
 
-        <form submit={submit}>
+        <form onSubmit={submit}>
         <Input
             type='text'
             name='nome_livro'
