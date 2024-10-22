@@ -10,7 +10,7 @@ const NavBar = () =>{
 
         <ul className={style.list}>
             <Link to='/'>
-                <li className={style.item}><img className={style.logo} src="./book.png"/></li>
+                <li className={style.logo}><img className={style.logo} src="./book.png"/></li>
             </Link>
 
             <Link to='/'>

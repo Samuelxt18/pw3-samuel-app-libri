@@ -2,7 +2,7 @@ import style from './CardBook.module.css'
 import Button from './Button'
 
 
-const CardBooks = ({titulo,autor,imagem})=>{
+const bookCard = ({cod_livro,titulo,autor,imagem})=>{
     return (
         <div className={style.CardBooks}>
             <h3 className={style.titulo}>{titulo}</h3>
@@ -17,4 +17,4 @@ const CardBooks = ({titulo,autor,imagem})=>{
     )
 }
 
-export default CardBooks
+export default bookCard
