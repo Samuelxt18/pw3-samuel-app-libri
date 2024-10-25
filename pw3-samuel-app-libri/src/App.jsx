@@ -13,7 +13,7 @@ import Container from './components/layout/Container'
 import Home from './components/pages/Home'
 import ListBooks from './components/pages/ListBooks'
 import CreateBooks from './components/pages/CreateBooks'
-
+import detailBook from './components/pages/DetailBooks'
 
    /*tem que estar igual no navbar na tag route quando for importar Samuel */
 
@@ -30,11 +30,13 @@ function App() {
       <Routes>    
 
       <Route path='/' element={<NavBar/>}>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/listBooks' element={<ListBooks/>}/> 
-      <Route path='/createBooks' element={<CreateBooks/>}/>
 
-      </Route>
+        <Route path='/' element={<Home/>}/>
+        {/* <Route path='/listBooks' element={<ListBooks/>}/> 
+        <Route path='/createBooks' element={<CreateBooks/>}/>
+        <Route path='/detailBook/cod_livro' element={<CreateBooks/>}/> */}
+  
+        </Route>'
       </Routes>
 
     </Container>

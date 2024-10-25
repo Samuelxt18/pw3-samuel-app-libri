@@ -4,9 +4,10 @@ import Input from "../forms/Input";
 import Select from '../forms/Select'
 import Button from "../forms/Button";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateBooks = () =>{
-
+    const  navigate = navigator
     // define o state e dados das categorias
     const [categorias,setCategorias] = useState([])
     /* STATE DE DADOS QUE VAI ARMAZENAR O OBJETO JSON DE LIVRO */
@@ -64,7 +65,7 @@ const CreateBooks = () =>{
             .then(
                     (data)=>{
                     console.log(data);
-                    // navigate('/livros',{state:'LIVRO CADASTRADO COM SUCESSO!'});
+                    navigate('/listBook',{state:'LIVRO CADASTRADO COM SUCESSO!'});
                     }
             )
             .catch(
