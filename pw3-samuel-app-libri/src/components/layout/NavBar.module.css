@@ -1,12 +1,12 @@
-/*  container do menu */
-.navBar{
+/* CONTAINER DO MENU */
+.navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #000154;
-    padding: 1em; 
+    background-color: blueviolet;
+    padding: 1em;
 }
 
-/*  regras da lista de links */
+/* REGRA DA LISTA DE LIVROS */
 .list{
     display: flex;
     list-style: none;
@@ -14,11 +14,13 @@
     justify-content: space-between;
 }
 
-/* regras dos links*/
+/* REGRAS DE LINKS */
 .item{
     margin-right: 1em;
     color: #fff;
 }
-.logo {
-    width: 120px;
+
+/* REGRA DE TAMANHO DA IMAGEM LOGO */
+.logo{
+    width: 120PX;
 }
