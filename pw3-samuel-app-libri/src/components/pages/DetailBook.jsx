@@ -50,10 +50,14 @@ const DetailBook = () => {
                 <div className={style.container_buttons}>
                     <Button 
                         label='EDITAR'
+                        router='/updateBooks/'
+                        cod_livro={book.cod_livro}
                     />
 
                     <Button 
                         label='EXCLUIR'
+                        router='/deleteBook/'
+                        cod_livro={book.cod_livro}
                     />
 
                 </div>
